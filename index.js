@@ -12,22 +12,26 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
     res.render("index", {
+        title: "Home",
         image: "home-bg",
     });
 });
 
 app.get("/about", (req, res) => {
     res.render("about", {
+        title: "About",
         image: "about-bg",
     });
 });
 app.get("/post", (req, res) => {
     res.render("post", {
+        title: "Post",
         image: "post-bg",
     });
 });
 app.get("/contact", (req, res) => {
     res.render("contact", {
+        title: "Contact",
         image: "contact-bg",
     });
 });
